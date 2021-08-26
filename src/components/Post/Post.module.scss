@@ -1,17 +1,28 @@
 .post {
-  border: 1px solid #2d2d2d;
-  background: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #50505066;
+  background: #effafe;
   padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 
   .title {
-
-  }
-
-  .author {
-
+    margin-bottom: 30px;
+    color: #414141;
   }
 
   .body {
 
+  }
+
+  .author {
+    border-left: 5px solid #b1b1b1;
+    padding-left: 5px;
+    color: #6b6b6b;
+    margin: auto 0 0 0;
   }
 }

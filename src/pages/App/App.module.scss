@@ -1,3 +1,37 @@
-.posts {
-  width: 100%;
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .inputAuthor {
+    width: 200px;
+    margin: 20px auto;
+  }
+
+  .posts {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .message {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .post {
+    width: calc(50% - 20px);
+
+    @media (max-width: 768px) {
+      margin: 0 50px 20px 50px;
+      width: 100%;
+    }
+
+    @media (max-width: 400px) {
+      margin: 0 0 20px 0;
+    }
+  }
 }
